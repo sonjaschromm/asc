@@ -6,26 +6,18 @@
 <title>About — ASC | Alex Schütz Collection</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
+
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
-  background: #0e0b06;
-  min-height: 100vh;
-  font-family: 'Karla', sans-serif;
-  color: #f0ead8;
+  background: #0e0b06; min-height: 100vh;
+  font-family: 'Karla', sans-serif; color: #f0ead8;
   padding: 2rem 1rem 4rem;
+  font-size: 16px;
 }
-body::before {
-  content: '';
-  position: fixed; inset: 0;
-  pointer-events: none; z-index: 0; opacity: 0.35;
-}
-.wrap {
-  position: relative; z-index: 1;
-  max-width: 600px; margin: 0 auto;
-}
+.wrap { max-width: 640px; margin: 0 auto; }
 .back {
   display: inline-flex; align-items: center; gap: 0.5rem;
-  font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+  font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase;
   color: #b8923a; text-decoration: none; margin-bottom: 2rem;
   transition: opacity 0.2s;
 }
@@ -34,108 +26,37 @@ body::before {
   background: linear-gradient(160deg, #1a1408 0%, #110d05 60%, #0e0b06 100%);
   border: 1px solid rgba(184,146,58,0.2);
   position: relative; overflow: hidden;
+  box-shadow: 0 2px 40px rgba(0,0,0,0.4);
 }
 .card::before {
-  content: '';
-  position: absolute; top: 0; left: 0; right: 0;
-  height: 2px;
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
   background: linear-gradient(90deg, transparent, #b8923a, #d4aa5a, #b8923a, transparent);
 }
-.header {
-  padding: 2.5rem 2.5rem 1.5rem;
-  border-bottom: 1px solid rgba(184,146,58,0.12);
-}
-.eyebrow {
-  font-size: 9px; letter-spacing: 0.3em;
-  text-transform: uppercase; color: #b8923a; margin-bottom: 0.8rem;
-}
-h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem; font-weight: 300; line-height: 1.2;
-  color: #f0ead8; margin-bottom: 0.4rem;
-}
-.intro {
-  font-size: 13px; color: rgba(240,234,216,0.5);
-  line-height: 1.7; font-weight: 300; margin-top: 0.8rem;
-}
-.person-block {
-  padding: 2rem 2.5rem;
-  border-bottom: 1px solid rgba(184,146,58,0.12);
-  display: flex; gap: 1.5rem; align-items: flex-start;
-}
-.person-block img {
-  width: 72px; height: 72px;
-  border-radius: 50%; object-fit: cover; object-position: center top;
-  border: 1.5px solid rgba(184,146,58,0.5);
-  flex-shrink: 0; filter: sepia(15%);
-}
-.person-content { flex: 1; }
-.person-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem; font-weight: 600; color: #fff8e8;
-  margin-bottom: 0.2rem;
-}
-.person-role {
-  font-size: 10px; letter-spacing: 0.12em;
-  text-transform: uppercase; color: #d4aa5a; margin-bottom: 0.8rem;
-}
-.person-text {
-  font-size: 13px; color: rgba(240,234,216,0.6);
-  line-height: 1.75; font-weight: 300;
-}
-.questions {
-  padding: 2rem 2.5rem;
-  border-bottom: 1px solid rgba(184,146,58,0.12);
-}
-.questions h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem; font-style: italic;
-  color: #d4aa5a; margin-bottom: 1.2rem; font-weight: 300;
-}
-.q-group { margin-bottom: 1.2rem; }
-.q-group-title {
-  font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
-  color: rgba(184,146,58,0.6); margin-bottom: 0.5rem;
-}
+.eyebrow { font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #b8923a; margin-bottom: 0.8rem; }
+h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 300; color: #f0ead8; line-height: 1.2; margin-bottom: 0.5rem; }
+
+.header { padding: 3rem 3rem 2rem; border-bottom: 1px solid rgba(184,146,58,0.12); }
+.intro { font-size: 15px; color: rgba(240,234,216,0.5); line-height: 1.75; margin-top: 1rem; }
+.person-block { padding: 2.5rem 3rem; border-bottom: 1px solid rgba(184,146,58,0.12); display: flex; gap: 2rem; align-items: flex-start; }
+.person-block img { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2px solid rgba(184,146,58,0.5); flex-shrink: 0; filter: sepia(15%); }
+.person-name { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: #fff8e8; margin-bottom: 0.3rem; }
+.person-role { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #d4aa5a; margin-bottom: 1rem; }
+.person-text { font-size: 15px; color: rgba(240,234,216,0.65); line-height: 1.8; }
+.questions { padding: 2.5rem 3rem; border-bottom: 1px solid rgba(184,146,58,0.12); }
+.questions h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-style: italic; color: #d4aa5a; margin-bottom: 1.5rem; font-weight: 300; }
+.q-group { margin-bottom: 1.5rem; }
+.q-group-title { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(184,146,58,0.6); margin-bottom: 0.7rem; }
 .q-list { list-style: none; }
-.q-list li {
-  font-size: 13px; color: rgba(240,234,216,0.55);
-  line-height: 1.6; padding: 0.25rem 0;
-  padding-left: 1rem; position: relative;
-}
-.q-list li::before {
-  content: '·'; position: absolute; left: 0; color: #b8923a;
-}
-.stats {
-  display: grid; grid-template-columns: repeat(3,1fr);
-  border-bottom: 1px solid rgba(184,146,58,0.12);
-}
-.stat {
-  padding: 1.2rem 1rem; text-align: center;
-  border-right: 1px solid rgba(184,146,58,0.12);
-}
+.q-list li { font-size: 15px; color: rgba(240,234,216,0.6); line-height: 1.7; padding: 0.3rem 0 0.3rem 1.2rem; position: relative; }
+.q-list li::before { content: '·'; position: absolute; left: 0; color: #b8923a; }
+.stats { display: grid; grid-template-columns: repeat(3,1fr); border-bottom: 1px solid rgba(184,146,58,0.12); }
+.stat { padding: 1.5rem 1rem; text-align: center; border-right: 1px solid rgba(184,146,58,0.12); }
 .stat:last-child { border-right: none; }
-.stat-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.6rem; font-weight: 300; color: #d4aa5a; line-height: 1;
-}
-.stat-label {
-  font-size: 9px; letter-spacing: 0.12em;
-  text-transform: uppercase; color: rgba(240,234,216,0.35); margin-top: 4px;
-}
-.footer {
-  padding: 1.5rem 2.5rem;
-  display: flex; justify-content: space-between; align-items: center;
-}
-.footer-link {
-  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-  color: #b8923a; text-decoration: none; transition: opacity 0.2s;
-}
-.footer-link:hover { opacity: 0.7; }
-.footer-copy {
-  font-size: 9px; letter-spacing: 0.1em;
-  text-transform: uppercase; color: rgba(240,234,216,0.2);
-}
+.stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: #d4aa5a; line-height: 1; }
+.stat-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(240,234,216,0.35); margin-top: 5px; }
+.footer { padding: 1.5rem 3rem; display: flex; justify-content: space-between; align-items: center; }
+.footer-link { font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #b8923a; text-decoration: none; }
+.footer-copy { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(240,234,216,0.2); }
 </style>
 </head>
 <body>
@@ -147,40 +68,27 @@ h1 {
       <h1>About the Collection</h1>
       <p class="intro">An invitation to see money anew — 2,200+ pre-monetary payment objects from five continents, documenting how humans have exchanged value across cultures and centuries.</p>
     </div>
-
     <div class="person-block">
       <img src="data:image/jpeg;base64,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" alt="Alex Schütz">
-      <div class="person-content">
+      <div>
         <div class="person-name">Alex Schütz</div>
         <div class="person-role">Collector</div>
         <p class="person-text">The Alex Schütz Collection is an invitation to see money anew. I've always been fascinated by the questions that lie behind each object: What is money, really? Why do some societies exist without coins, yet possess rich and complex forms of currency? How did trust function long before banks or states existed? And what makes something valuable — its material, its beauty, its rarity, or its meaning?</p>
       </div>
     </div>
-
     <div class="person-block">
       <img src="data:image/jpeg;base64,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" alt="Sonja Schromm">
-      <div class="person-content">
+      <div>
         <div class="person-name">Sonja Schromm</div>
         <div class="person-role">Author & Editor</div>
         <p class="person-text">When you stand before these objects — from copper crosses to glass beads, from salt blocks to carved stones — you begin to understand that money has never been only about wealth. It has always been about <em>connection</em>. Every object answers a question, quietly, precisely, in the language of its time.</p>
       </div>
     </div>
-
     <div class="stats">
-      <div class="stat">
-        <div class="stat-num">2,200+</div>
-        <div class="stat-label">Objects</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">40+</div>
-        <div class="stat-label">Countries</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">8,000+</div>
-        <div class="stat-label">Subscribers</div>
-      </div>
+      <div class="stat"><div class="stat-num">2,200+</div><div class="stat-label">Objects</div></div>
+      <div class="stat"><div class="stat-num">40+</div><div class="stat-label">Countries</div></div>
+      <div class="stat"><div class="stat-num">8,000+</div><div class="stat-label">Subscribers</div></div>
     </div>
-
     <div class="questions">
       <h2>Questions that guide the collection</h2>
       <div class="q-group">
@@ -201,7 +109,6 @@ h1 {
         </ul>
       </div>
     </div>
-
     <div class="footer">
       <a href="https://sonjaschromm.substack.com" target="_blank" class="footer-link">Read the Newsletter →</a>
       <span class="footer-copy">ASC · Vienna · 2026</span>
